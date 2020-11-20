@@ -1,6 +1,12 @@
 version: "3"
 services:
   imposter:
-    image: aeonlucid/impostor
+    build:
+      args:
+        BUILDPLATFORM: amd64
+        TARGETARCH: amd64
+        TARGETPLATFORM: amd64
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "22023:22023/udp"
