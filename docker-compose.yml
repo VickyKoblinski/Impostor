@@ -1,6 +1,6 @@
 version: "3"
 services:
   imposter:
-    build: .
+    image: aeonlucid/impostor
     ports:
       - "22023:22023/udp"
