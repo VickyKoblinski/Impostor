@@ -1,0 +1,6 @@
+version: "3"
+services:
+  imposter:
+    build: .
+    ports:
+      - "22023:22023/udp"
